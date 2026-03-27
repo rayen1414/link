@@ -145,6 +145,10 @@ std::string FetchStationCode() {
 
 // ═════════════════════════════════════════════════════════════════════════════
 int main() {
+
+Image windowIcon = LoadImage("img.jpg"); 
+SetWindowIcon(windowIcon);
+UnloadImage(windowIcon); 
     SetConfigFlags(FLAG_MSAA_4X_HINT);
     InitWindow(1280, 720, "LINK | STASIS_P2P");
     SetTargetFPS(60);
